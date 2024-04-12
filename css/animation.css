@@ -1,0 +1,154 @@
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #E42A4F;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+.nav-item:hover .nav-link::after {
+  width: 100%;
+}
+
+.icon-btn-active span.icon-top {
+  transform: translateY(10px) rotate(45deg);
+}
+.icon-btn-active span.icon-bottom {
+  transform: translateY(-10px) rotate(-45deg);
+}
+.icon-btn-active span.icon-mid {
+  scale: 0.8;
+  opacity: 0;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked + .switch img {
+  transform: translateX(80%);
+}
+
+.switch {
+  width: 50px;
+  height: 24px;
+  padding: 1px 5px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch img {
+  transition: all 0.5s;
+}
+
+.satellite {
+  animation: Satellite 3s ease-out infinite;
+}
+
+@keyframes Satellite {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.light {
+  animation: Light 3s ease-in infinite;
+}
+
+@keyframes Light {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.explore {
+  animation: Bounce 1s ease-out infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+@keyframes Bounce {
+  0% {
+    bottom: 2px;
+  }
+  25% {
+    bottom: 8px;
+  }
+  50% {
+    bottom: 0;
+  }
+  75% {
+    bottom: 3px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+.head {
+  animation: Head 5s ease-in-out infinite;
+}
+
+@keyframes Head {
+  0% {
+    transform: scale(2) rotate(0) rotateY(180deg);
+  }
+  25% {
+    transform: scale(2) rotate(-15deg) rotateY(180deg);
+  }
+  50% {
+    transform: scale(2) rotate(-10deg) rotateY(180deg);
+  }
+  75% {
+    transform: scale(2) rotate(-15deg) rotateY(180deg);
+  }
+  100% {
+    transform: scale(2) rotate(0) rotateY(180deg);
+  }
+}
+.shoulder {
+  animation: Shoulder 5s linear infinite;
+}
+
+@keyframes Shoulder {
+  0% {
+    transform: scale(2) rotateY(180deg) translate(2px, -2px);
+  }
+  50% {
+    transform: scale(2) rotateY(180deg) translate(-3px, 3px);
+  }
+  100% {
+    transform: scale(2) rotateY(180deg) translate(2px, -2px);
+  }
+}/*# sourceMappingURL=animation.css.map */

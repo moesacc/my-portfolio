@@ -1,0 +1,97 @@
+// Responsive Section 
+// The breakpoints are taken from bootstrap
+
+@mixin centered-div() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .home-page {
+        height: auto;
+        .home-page-l, .home-page-r {
+            @include centered-div;
+        }
+        
+    }
+
+    .profile {
+        width: 220px;
+        height: 220px;
+    }
+
+
+.projects {
+    height: auto !important;
+
+    .project-items {
+        width: 250px;
+
+        .img-container {
+            width: 100%;
+            height: 180px;
+        }
+    }
+
+    .item-below {
+        transform: translateY(0);
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .home-page h1 {
+        font-size: 2rem;
+    }
+
+    .satellite {
+        scale: .5;
+    }
+
+    .profile {
+        width: 280px;
+        height: 280px;
+    }
+
+    .projects {
+        height: 120vh;
+        
+        .project-items {
+            width: 300px;
+    
+            .img-container {
+                width: 100%;
+                height: 220px;
+            }
+        }
+    
+    }
+ 
+}
+
+@media screen and (max-width: 1024px) {
+   
+    .projects {
+        height: 160vh;
+        
+        .project-items {
+            width: 300px;
+    
+            .img-container {
+                width: 100%;
+                height: 220px;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .profile {
+        width: 320px;
+        height: 320px;
+    }
+
+}

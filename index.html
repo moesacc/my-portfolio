@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zeembi</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body class="bg-dark text-light theme p-0">
+    <!-- navbar section start -->
+    <section class="container-fluid shadow-sm bg-dark text-light theme" id="navbar-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="#"  class="navbar-brand ms-3"><h4>zeembi</h4></a>
+    
+                <button class="bg-transparent border-0 d-inline-block d-md-none icon-btn" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <div>
+                        <span class="icon-top"></span> 
+                        <span class="icon-mid"></span> 
+                        <span class="icon-bottom"></span>
+                    </div>
+                </button>
+    
+                <div class="w-100"></div>
+                <!-- collapse section start  -->
+                <div class="collapse navbar-collapse" id="nav">
+                    <div class="my-3 my-md-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-3"><a href="#about" class="nav-link">About</a></li>
+                            <!-- <li class="nav-item me-3"><a href="#" class="nav-link">Experiences</a></li> -->
+                            <li class="nav-item me-3"><a href="#projects" class="nav-link">Projects</a></li>
+                            <li class="nav-item me-4"><a href="#contacts" class="nav-link">Contacts</a></li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a href="#" class="btn dropdown-toggle me-3 bg-dark text-light theme" data-bs-toggle="dropdown">CV Form</a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item py-2">
+                                            <i class="fa-solid fa-arrow-down me-2 fs-5"></i>
+                                            Download CV 
+                                        </li>
+                                        <li class="dropdown-item border-top py-2">
+                                            <i class="fa-brands fa-odysee me-2 fs-5"></i>
+                                            Preview CV</li>
+                                    </ul>
+                                </div>
+                               
+                            </li>
+
+                            <hr>
+
+                            <li class="nav-item d-flex align-items-center">
+                                <!-- <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label d-inline-block d-md-none" for="flexSwitchCheckDefault">Dark Mode</label> -->
+                                    
+                                    <input type="checkbox" id="checkbox" checked>
+                                    <label for="checkbox" class="switch">
+                                        <img src="photos/moon-white.svg">
+                                    </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- collapse section end  -->
+    
+        </nav>
+        </div>
+    </section>
+        <!-- navbar section end -->
+        
+    <!-- Home Page Section Start  -->
+    <section class="container-fluid bg-dark text-light theme" id="home">
+        <div class="container">
+            <!-- <img src="photos/dot.jpg" alt="" class="bg-img"> -->
+            <div class="row home-page">
+                <div class="col-12 col-md-5 py-5 d-flex align-items-center justify-content-center home-page-l">
+                    <img src="photos/hero.png" alt="profile image" class="border border-2 border-secondary rounded-pill profile">
+    
+                    <!-- <img src="photos/satellite.svg" class="satellite d-none"> -->
+    
+                </div>
+                <div class="col-12 col-md-5 d-md-flex align-items-center justify-content-center flex-column home-page-r">
+                    <p>My name is</p>
+                    <h1 class="text-danger">Khaing Myo Zaw</h1>
+                    <h5><span class="text-danger fw-bolder">"zeembi"</span> as nickname</h5>
+                    <h3 class="fs-4">Junior Web Developer</h3>
+                    
+                    <hr class="hr-white hr-dark" style="width: 80%; height: 1px;">
+    
+                    <div class="mt-3 btns">
+                        <a href="#" class="me-3 contacts">Contacts</a>
+                        <span class="contacts-span"></span>
+                        <a href="#" class="ms-3 bg-dark theme see-more">See more &rarr;</a>
+                        <span class="ms-3 seemore-span"></span>
+                    </div>
+    
+                    <!-- <img src="photos/ufo.svg" class="ufo"> -->
+                    <!-- <img src="photos/light.svg" class="light"> -->
+                    
+                </div>
+
+                <a href="#about" class="d-none d-md-block">
+                    <img src="photos/explore.svg" alt="explore more" class="w-100 explore">
+                </a>
+    
+            </div>
+    
+        </div>
+
+        <div class="d-none d-md-block d-flex" style="width: 60px;position: absolute; right: 0;
+        bottom: 0;">
+            <a href="https://github.com/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-github fs-3 mb-4"></i></a>
+            <br>
+
+            <a href="https://www.facebook.com/khaingmyozaw88" target="_blank" class="text-white social-medias"><i class="fa-brands fa-facebook fs-3 mb-4"></i></a>
+            <br>
+
+            <a href="https://t.me/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-telegram fs-3 mb-4"></i></a>
+            <br>
+
+            <a href="viber://add?+959895123061" target="_blank" class="text-white social-medias"><i class="fa-brands fa-viber fs-3"></i></a> <br>
+
+            <!-- <hr class="hr-white hr-dark" style="width: 5px; height: 100px; background-color: red;"> -->
+            <div class="mx-3" style="height: 100px;width: 1px;background-color: #E42A4F;"></div>
+        </div>
+
+    </section>
+    <!-- Home Page Section End  -->
+
+    <!-- Hobby Section Start -->
+    <section class="container-fluid my-3 py-3 hobby section-dark">
+        <div class="container">
+
+            <p class="text-center fw-bold mt-3">My Hobby</p>
+
+            <div class="row align-items-center justify-content-center">
+                
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                    <i class="fa-solid fa-code p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
+                    <span class="text-dark">CODING</span>
+                </div>
+                
+
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                    <i class="fa-solid fa-headphones p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
+                    <span class="text-dark">MUSIC</span>
+                </div>
+                
+
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                    <i class="fa-solid fa-earth-americas p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
+                    <span class="text-dark">TRAVELING</span>
+                </div>
+                
+
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                    <i class="fa-solid fa-utensils p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
+                    <span class="text-dark">COOKING</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Hobby Section End -->
+
+    <!-- About Section Start -->
+    <section class="container-fluid my-3 py-4 bg-dark text-light theme about" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <!-- about contents -->
+                <div class="col-10 col-md-5 py-3 text-center mx-auto">
+                    <h4>
+                        <i class="fa-solid fa-link text-danger mx-2"></i>
+                        About me
+                    </h4>
+                    <hr class="hr-white hr-dark" style="width: 100%; height: 1px;">
+                    <p class="text-white-50 mt-4 content">
+                        As a passionate junior web developer, I thrive on transforming ideas into reality through code. With a solid foundation in web developement, I'm dedicated to crafting engaging and user-friendly experiences.
+                    </p>
+
+                    <div class="row py-3">
+                        <div class="col-12 col-md-6 p-2">
+                            <i class="fa-solid fa-at p-2 me-2 text-danger"></i>
+                            <span>Khaing Myo Zaw</span> 
+                        </div> 
+                        
+                        <div class="col-12 col-md-6 p-2">
+                            <i class="fa-solid fa-street-view p-2 me-2 text-danger"></i>
+                            <span>Yangon, Myanmar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- about animated images -->
+                <div class="col-4 d-none d-md-block about-img-container section-dark">
+                    <img src="photos/head.svg" alt="" class="head about-img">
+                    <img src="photos/body.svg" alt="" class="shoulder about-img">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Educations and skills section start -->
+    <section class="container-fluid my-3 py-4 bg-dark text-light theme skills section-dark">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-6 my-4">
+                    <h4 class="text-center my-3"><i class="fa-solid fa-link text-danger mx-2"></i> Skills</h4>
+
+                    <div class="p-2 border-top rounded bg-light bg-dark text-light theme" style="height: auto;">
+                        <h5 class="text-danger">
+                            <i class="fa-regular fa-circle"></i>
+                            Language skills
+                        </h5>
+                        <!-- <p class="fw-bold mt-3 skill-language">HTML | CSS | Javascript | PHP</p> -->
+                        
+                        <!-- skills section  -->
+                        <div class="d-flex justify-content-around mt-4 languages">
+
+                            <!-- html -->
+                            <div class="m-2 rounded html" style="--i:98%">
+                                <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
+                                    <span class="d-block">98% of</span>
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                            <!-- css -->
+                            <div class="m-2 rounded css" style="--i:98%">
+                                <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
+                                    <span class="d-block">98% of</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+
+                            <!-- js -->
+                            <div class="m-2 rounded js" style="--i:90%">
+                                <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
+                                    <span class="d-block">90% of</span>
+                                    <span>JS</span>
+                                </div>
+                            </div>
+                            <!-- php -->
+                            <div class="m-2 rounded php" style="--i:85%">
+                                <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
+                                    <span class="d-block">85% of</span>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- <hr class="hr-white hr-dark" style="width: 100%; height: 1px;"> -->
+
+                    <div class="p-2 border-top rounded mt-4 bg-light bg-dark text-light theme">
+                        <h5 class="text-danger">
+                            <i class="fa-regular fa-circle"></i>
+                            Frameworks
+                        </h5>
+                        <p class="fw-bold mt-3 skill-languages">Bootstrap | jQuery | Laravel</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6 my-4">
+
+                    <h4 class="text-center my-3 py-2 border-bottom"><i class="fa-solid fa-link text-danger mx-2"></i> Education</h4>
+
+                    <h5>Technology University</h5>
+                    <h6 class="text-white-50 content">( Dropped out )</h6>
+                    <p class="text-white-50 my-4 content"> - Technology University in Loikaw [dropped out]</p>
+
+                    <h5>Others</h5>
+                    <p class="text-white-50 mt-4 content"> - <b class="text-danger">"</b>Professional web developer<b class="text-danger">"</b> at Fairway Technology</p>
+
+
+                    <h5 class="text-danger mt-4 w-50 border-bottom">Languages</h5>
+                    <p class="fw-bold mt-2 skill-languages">Burmese | English</p>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Educations and skills section end -->
+
+    <!-- Projects Section Start -->
+    <section class="container-fluid my-3 py-4 projects" id="projects">
+        <div class="container">
+            <h3 class="fw-bold mt-3 text-center">
+                <i class="fa-solid fa-link text-danger mx-2"></i>
+                Projects
+            </h3>
+            <hr class="hr-white hr-dark" style="width: 100%; height: 1px;">
+
+            <div class="my-3 d-flex justify-content-center align-items-center flex-wrap" style="height: auto;">
+
+                <!-- project items -->
+                <div class="m-3 project-items">
+                    <a href="https://github.com/khaingmyozaw/laravel-project-class-" target="_blank">
+                        <div class="img-container">
+                            <img src="photos/blog.jpg" alt="blog">
+                        </div>
+                        <div class="p-2 bg-dark bg-light theme">
+                            <h5 class="fs-5 text-primary">Blog Project</h5>
+                            <p class="text-white-50 content">This project was created on class training.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- project items -->
+                <div class="m-3 project-items item-below">
+                    <a href="https://github.com/khaingmyozaw/tltc_onlineshop" target="_blank">
+                        <div class="img-container">
+                            <img src="photos/giftshop.jpg" alt="gift shop">
+                        </div>
+                        <div class="bg-dark bg-light theme p-2">
+                            <h5 class="fs-5 text-primary">Gift Shop Project</h5>
+                            <p class="text-white-50 content">I wrote it for collabration with my classmate.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- project items -->
+                <div class="m-3 project-items">
+                    <a href="https://github.com/khaingmyozaw/php_project" target="_blank">
+                        <div class="img-container">
+                            <img src="photos/auth.png" alt="Authentication">
+                        </div>
+                        <div class="p-2 bg-dark bg-light theme">
+                            <h5 class="fs-5 text-primary">PHP Project</h5>
+                            <p class="text-white-50 content">This project was created on class training.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- project items -->
+                <div class="m-3 project-items item-below">
+                    <a href="https://github.com/khaingmyozaw/javascript_projects" target="_blank">
+                        <div class="img-container">
+                            <img src="photos/dom.jpg" alt="DOM">
+                        </div>
+                        <div class="p-2 bg-dark bg-light theme">
+                            <h5 class="fs-5 text-primary">Javascript DOM Projects</h5>
+                            <p class="text-white-50 content">Javascript dom training.</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <br>
+        </div>
+    </section>
+    
+    <div>
+        <p class="text-center text-white-50 content">Anyother projects will be uploading soon...</p>
+        
+    </div>
+     <!-- Projects Section End -->
+
+     <!-- Contacts Section Start -->
+     <section class="container-fluid my-3 py-4 bg-dark text-light theme contacts" id="contacts">
+        <div class="container">
+            <h3 class="text-center my-4">How to reach me?</h3>
+            <div class="row text-center">
+
+                <div class="col-12 mb-4">
+                    <span class="p-2 text-danger">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span>kmyozaw.dev@gmail.com</span>
+                </div>
+
+                <div class="col-12">
+                    <a href="https://github.com/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-github fs-3 me-4"></i></a>
+                    <a href="https://www.facebook.com/khaingmyozaw88" target="_blank" class="text-white social-medias"><i class="fa-brands fa-facebook fs-3 me-4"></i></a>
+                    <a href="https://t.me/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-telegram fs-3 me-4"></i></a>
+                    <a href="viber://add?+959895123061" target="_blank" class="text-white social-medias"><i class="fa-brands fa-viber fs-3"></i></a>
+                </div>
+
+            </div>
+        </div>
+     </section>
+     <!-- Contacts Section End -->
+     <hr class="hr-white hr-dark" style="width: 100%; height: 1px;">
+
+     <!-- Footer Section Start  -->
+     <section class="container-fluid my-5 text-center">
+        <p class="text-white-50 content">&#169; Copyright 2024 by zeembi</p>
+     </section>
+     <!-- Footer Section End  -->
+    
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/149adfc48b.js" crossorigin="anonymous"></script>
+
+    <!-- javascript file that created by self -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
