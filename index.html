@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+     <!-- scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body class="bg-dark text-light theme p-0">
     <!-- navbar section start -->
-    <section class="container-fluid shadow-sm bg-dark text-light theme" id="navbar-section">
+    <section class="container-fluid shadow-sm bg-light bg-dark text-light theme" id="navbar-section">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <a href="#"  class="navbar-brand ms-3"><h4>zeembi</h4></a>
@@ -41,12 +44,17 @@
                                     
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-item py-2">
-                                            <i class="fa-solid fa-arrow-down me-2 fs-5"></i>
-                                            Download CV 
+                                            <button class="btn" onclick="downloadCV()">
+                                                <i class="fa-solid fa-arrow-down me-2 fs-5"></i>
+                                                Download CV 
+                                            </button>
                                         </li>
                                         <li class="dropdown-item border-top py-2">
-                                            <i class="fa-brands fa-odysee me-2 fs-5"></i>
-                                            Preview CV</li>
+                                            <a href="https://drive.google.com/file/d/1HP4wm_5m7c_Dgtiw-yi9fSiLl9WrXoZy/view?usp=drivesdk" target="_blank" class="btn">
+                                                <i class="fa-brands fa-odysee me-2 fs-5"></i>
+                                                Preview CV
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                
@@ -85,10 +93,10 @@
     
                 </div>
                 <div class="col-12 col-md-5 d-md-flex align-items-center justify-content-center flex-column home-page-r">
-                    <p>My name is</p>
-                    <h1 class="text-danger">Khaing Myo Zaw</h1>
-                    <h5><span class="text-danger fw-bolder">"zeembi"</span> as nickname</h5>
-                    <h3 class="fs-4">Junior Web Developer</h3>
+                    <p class="myname">My name is</p>
+                    <h1 class="text-danger name">Khaing Myo Zaw</h1>
+                    <h5 class="zeembi"><span class="text-danger fw-bolder">"zeembi"</span> as nickname</h5>
+                    <h3 class="fs-4 web-developer">Junior Web Developer</h3>
                     
                     <hr class="hr-white hr-dark" style="width: 80%; height: 1px;">
     
@@ -140,25 +148,25 @@
 
             <div class="row align-items-center justify-content-center">
                 
-                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold hobby-items">
                     <i class="fa-solid fa-code p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
                     <span class="text-dark">CODING</span>
                 </div>
                 
 
-                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold hobby-items">
                     <i class="fa-solid fa-headphones p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
                     <span class="text-dark">MUSIC</span>
                 </div>
                 
 
-                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold hobby-items">
                     <i class="fa-solid fa-earth-americas p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
                     <span class="text-dark">TRAVELING</span>
                 </div>
                 
 
-                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold">
+                <div class="col-7 col-md-5 col-lg-2 m-2 p-2 bg-light rounded-pill border fw-bold hobby-items">
                     <i class="fa-solid fa-utensils p-2 mx-2 text-danger rounded-pill" style="background-color: #eee;"></i>
                     <span class="text-dark">COOKING</span>
                 </div>
@@ -180,17 +188,17 @@
                         About me
                     </h4>
                     <hr class="hr-white hr-dark" style="width: 100%; height: 1px;">
-                    <p class="text-white-50 mt-4 content">
+                    <p class="text-white-50 mt-4 content about-content">
                         As a passionate junior web developer, I thrive on transforming ideas into reality through code. With a solid foundation in web developement, I'm dedicated to crafting engaging and user-friendly experiences.
                     </p>
 
                     <div class="row py-3">
-                        <div class="col-12 col-md-6 p-2">
+                        <div class="col-12 col-md-6 p-2 about-contacts">
                             <i class="fa-solid fa-at p-2 me-2 text-danger"></i>
                             <span>Khaing Myo Zaw</span> 
                         </div> 
                         
-                        <div class="col-12 col-md-6 p-2">
+                        <div class="col-12 col-md-6 p-2 about-contacts">
                             <i class="fa-solid fa-street-view p-2 me-2 text-danger"></i>
                             <span>Yangon, Myanmar</span>
                         </div>
@@ -215,10 +223,10 @@
             <div class="row">
 
                 <div class="col-12 col-lg-6 my-4">
-                    <h4 class="text-center my-3"><i class="fa-solid fa-link text-danger mx-2"></i> Skills</h4>
+                    <h4 class="text-center my-3 skill-lefts"><i class="fa-solid fa-link text-danger mx-2"></i> Skills</h4>
 
                     <div class="p-2 border-top rounded bg-light bg-dark text-light theme" style="height: auto;">
-                        <h5 class="text-danger">
+                        <h5 class="text-danger skill-lefts">
                             <i class="fa-regular fa-circle"></i>
                             Language skills
                         </h5>
@@ -228,14 +236,14 @@
                         <div class="d-flex justify-content-around mt-4 languages">
 
                             <!-- html -->
-                            <div class="m-2 rounded html" style="--i:98%">
+                            <div class="m-2 rounded html skill-bottoms" style="--i:98%">
                                 <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
                                     <span class="d-block">98% of</span>
                                     <span>HTML</span>
                                 </div>
                             </div>
                             <!-- css -->
-                            <div class="m-2 rounded css" style="--i:98%">
+                            <div class="m-2 rounded css skill-bottoms" style="--i:98%">
                                 <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
                                     <span class="d-block">98% of</span>
                                     <span>CSS</span>
@@ -243,14 +251,14 @@
                             </div>
 
                             <!-- js -->
-                            <div class="m-2 rounded js" style="--i:90%">
+                            <div class="m-2 rounded js skill-bottoms" style="--i:90%">
                                 <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
                                     <span class="d-block">90% of</span>
                                     <span>JS</span>
                                 </div>
                             </div>
                             <!-- php -->
-                            <div class="m-2 rounded php" style="--i:85%">
+                            <div class="m-2 rounded php skill-bottoms"" style="--i:85%">
                                 <div class="bg-light bg-dark text-light d-flex flex-column align-items-center justify-content-center rounded skill-item theme">
                                     <span class="d-block">85% of</span>
                                     <span>PHP</span>
@@ -264,29 +272,29 @@
                     <!-- <hr class="hr-white hr-dark" style="width: 100%; height: 1px;"> -->
 
                     <div class="p-2 border-top rounded mt-4 bg-light bg-dark text-light theme">
-                        <h5 class="text-danger">
+                        <h5 class="text-danger skill-lefts">
                             <i class="fa-regular fa-circle"></i>
                             Frameworks
                         </h5>
-                        <p class="fw-bold mt-3 skill-languages">Bootstrap | jQuery | Laravel</p>
+                        <p class="fw-bold mt-3 skill-languages skill-bottoms">Bootstrap | jQuery | Laravel</p>
                     </div>
 
                 </div>
 
                 <div class="col-12 col-lg-6 my-4">
 
-                    <h4 class="text-center my-3 py-2 border-bottom"><i class="fa-solid fa-link text-danger mx-2"></i> Education</h4>
+                    <h4 class="text-center my-3 py-2 border-bottom skill-lefts"><i class="fa-solid fa-link text-danger mx-2"></i> Education</h4>
 
-                    <h5>Technology University</h5>
-                    <h6 class="text-white-50 content">( Dropped out )</h6>
-                    <p class="text-white-50 my-4 content"> - Technology University in Loikaw [dropped out]</p>
+                    <h5 class=" skill-bottoms">Technology University</h5>
+                    <h6 class="text-white-50 content skill-bottoms">( Dropped out )</h6>
+                    <p class="text-white-50 my-4 content skill-bottoms"> - Technology University in Loikaw [dropped out]</p>
 
-                    <h5>Others</h5>
-                    <p class="text-white-50 mt-4 content"> - <b class="text-danger">"</b>Professional web developer<b class="text-danger">"</b> at Fairway Technology</p>
+                    <h5 class=" skill-bottoms">Others</h5>
+                    <p class="text-white-50 mt-4 content skill-bottoms"> - <b class="text-danger">"</b>Professional web developer<b class="text-danger">"</b> at Fairway Technology</p>
 
 
-                    <h5 class="text-danger mt-4 w-50 border-bottom">Languages</h5>
-                    <p class="fw-bold mt-2 skill-languages">Burmese | English</p>
+                    <h5 class="text-danger mt-4 w-50 border-bottom skill-lefts">Languages</h5>
+                    <p class="fw-bold mt-2 skill-languages skill-bottoms">Burmese | English</p>
 
                 </div>
                 
@@ -362,7 +370,6 @@
     
     <div>
         <p class="text-center text-white-50 content">Anyother projects will be uploading soon...</p>
-        
     </div>
      <!-- Projects Section End -->
 
@@ -380,10 +387,10 @@
                 </div>
 
                 <div class="col-12">
-                    <a href="https://github.com/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-github fs-3 me-4"></i></a>
-                    <a href="https://www.facebook.com/khaingmyozaw88" target="_blank" class="text-white social-medias"><i class="fa-brands fa-facebook fs-3 me-4"></i></a>
-                    <a href="https://t.me/khaingmyozaw" target="_blank" class="text-white social-medias"><i class="fa-brands fa-telegram fs-3 me-4"></i></a>
-                    <a href="viber://add?+959895123061" target="_blank" class="text-white social-medias"><i class="fa-brands fa-viber fs-3"></i></a>
+                    <a href="https://github.com/khaingmyozaw" target="_blank" class="text-black text-white social-medias"><i class="fa-brands fa-github fs-3 me-4"></i></a>
+                    <a href="https://www.facebook.com/khaingmyozaw88" target="_blank" class="text-black text-white social-medias"><i class="fa-brands fa-facebook fs-3 me-4"></i></a>
+                    <a href="https://t.me/khaingmyozaw" target="_blank" class="text-black text-white social-medias"><i class="fa-brands fa-telegram fs-3 me-4"></i></a>
+                    <a href="viber://add?+959895123061" target="_blank" class="text-black text-white social-medias"><i class="fa-brands fa-viber fs-3"></i></a>
                 </div>
 
             </div>
