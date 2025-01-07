@@ -1,4 +1,13 @@
 
+const loading = document.querySelector('.lazy-loading');
+const body = document.querySelector('body');
+window.addEventListener('load', function() {
+    loading.style.display = 'none'
+    body.style.overflow = 'auto'
+});
+
+
+
 // CV form preview and download
 const link = 'https://drive.google.com/uc?export=download&id=1HP4wm_5m7c_Dgtiw-yi9fSiLl9WrXoZy';
 
