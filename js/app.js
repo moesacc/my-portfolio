@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
       backDelay: 2000,
     });
   }
+
+  let iso = new Isotope('.isotope-container', {
+      itemSelector: '.isotope-item'
+    });
+
+    // Filter buttons
+    let filters = document.querySelectorAll('.isotope-filters li');
+    filters.forEach(button => {
+      button.addEventListener('click', () => {
+        filters.forEach(btn => btn.classList.remove('filter-active'));
+        button.classList.add('filter-active');
+        let filterValue = button.getAttribute('data-filter');
+        iso.arrange({ filter: filterValue });
+      });
+    });
 });
 
 const icon_btn = document.querySelector(".icon-btn");

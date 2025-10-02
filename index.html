@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moe Sacc</title>
-    <link rel="icon" href="photos/favicon3.png" type="image/x-icon" />
+    <link rel="icon" href="photos/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animation.css" />
@@ -45,7 +45,7 @@
                     <a href="#skills" class="nav-link">Skills</a>
                   </li>
                   <li class="nav-item me-3">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experiences" class="nav-link">Experiences</a>
                   </li>
                   <li class="nav-item me-4">
                     <a href="#contacts" class="nav-link">Contacts</a>
@@ -298,10 +298,13 @@
                     >Laravel</span
                   >
                   <span class="badge bg-primary text-light p-2 rounded"
-                    >CodeIgniter</span
+                    >Filament</span
                   >
                   <span class="badge bg-primary text-light p-2 rounded"
                     >Moodle</span
+                  >
+                  <span class="badge bg-primary text-light p-2 rounded"
+                    >CodeIgniter</span
                   >
                   <span class="badge bg-primary text-light p-2 rounded"
                     >MySQL</span
@@ -358,94 +361,214 @@
       <!-- Educations and skills section end -->
 
       <!-- Projects Section Start -->
-      <section class="container-fluid my-3 py-4 projects" id="projects">
+      <section class="container-fluid my-3 py-4 portfolio" id="experiences">
         <div class="container">
           <h3 class="fw-bold mt-3 text-center">
             <i class="fa-solid fa-link text-danger mx-2"></i>
-            Projects
+            Project Experiences
           </h3>
           <hr class="hr-white hr-dark" style="width: 100%; height: 1px" />
 
-          <div
-            class="my-3 d-flex justify-content-center align-items-center flex-wrap"
-            style="height: auto"
+          <ul
+            class="portfolio-filters isotope-filters"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
-            <!-- project items -->
-            <div class="m-3 project-items">
-              <a
-                href="https://github.com/khaingmyozaw/laravel-project-class-"
-                target="_blank"
-              >
-                <div class="img-container">
-                  <img src="photos/blog.svg" alt="blog" />
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-projects">Completed Projects</li>
+            <li data-filter=".filter-projects1">New Projects</li>
+            <li data-filter=".filter-systems">Other Supported Projects</li>
+          </ul>
+          <div
+            class="row gy-4 isotope-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>KBZ Learning Management System</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <div class="p-2 bg-dark bg-light theme">
-                  <h5 class="fs-5 text-primary">Blog Project</h5>
-                  <p class="text-white-50 content">
-                    This project was created on class training.
-                  </p>
-                </div>
-              </a>
+              </div>
             </div>
-            <!-- project items -->
-            <div class="m-3 project-items item-below">
-              <a
-                href="https://github.com/khaingmyozaw/tltc_onlineshop"
-                target="_blank"
-              >
-                <div class="img-container">
-                  <img src="photos/giftshop.svg" alt="gift shop" />
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects1"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>More & More Learning Management System</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <div class="bg-dark bg-light theme p-2">
-                  <h5 class="fs-5 text-primary">Gift Shop Project</h5>
-                  <p class="text-white-50 content">
-                    I wrote it for collabration with my classmate.
-                  </p>
-                </div>
-              </a>
+              </div>
             </div>
-            <!-- project items -->
-            <div class="m-3 project-items">
-              <a
-                href="https://github.com/khaingmyozaw/php_project"
-                target="_blank"
-              >
-                <div class="img-container">
-                  <img src="photos/auth.svg" alt="Authentication" />
+            <!-- End Portfolio Item -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>AYASOMPO Learning Management System</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Product 2"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <div class="p-2 bg-dark bg-light theme">
-                  <h5 class="fs-5 text-primary">PHP Project</h5>
-                  <p class="text-white-50 content">
-                    This project was created on class training.
-                  </p>
-                </div>
-              </a>
+              </div>
             </div>
-            <!-- project items -->
-            <div class="m-3 project-items item-below">
-              <a
-                href="https://github.com/khaingmyozaw/javascript_projects"
-                target="_blank"
-              >
-                <div class="img-container">
-                  <img src="photos/dom.svg" alt="DOM" />
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects1"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Toyota Aye And Sons Web portal</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
                 </div>
-                <div class="p-2 bg-dark bg-light theme">
-                  <h5 class="fs-5 text-primary">Javascript DOM Projects</h5>
-                  <p class="text-white-50 content">Javascript dom training.</p>
-                </div>
-              </a>
+              </div>
             </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>WBM Learning Management System</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Product 3"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-systems"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Star University Myanmar Student Management System</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects"
+            >
+              <div class="portfolio-content h-100">
+                <img src="photos/main.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Native Web portal</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="photos/main.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <!-- End Portfolio Item -->
           </div>
-          <br />
+          <!-- End Portfolio Container -->
         </div>
       </section>
-
-      <div>
-        <p class="text-center text-white-50 content">
-          Anyother projects will be uploading soon...
-        </p>
-      </div>
       <!-- Projects Section End -->
 
       <!-- Contacts Section Start -->
@@ -525,5 +648,6 @@
     <!-- javascript file that created by self -->
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   </body>
 </html>
