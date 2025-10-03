@@ -372,7 +372,7 @@ body {
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: #0D6EFd;
+  color: #0d6efd;
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -391,8 +391,11 @@ body {
 }
 
 .portfolio .portfolio-content {
-  position: relative;
+  border-radius: 15px;
   overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* shadow */
 }
 
 .portfolio .portfolio-content img {
